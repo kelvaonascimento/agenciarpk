@@ -1,7 +1,14 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization to avoid build errors
+const getResend = () => {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    return null;
+  }
+  return new Resend(apiKey);
+};
 
 const situacoesMap: Record<string, string> = {
   "primeiro-lancamento": "Primeiro grande lançamento vertical",
@@ -61,6 +68,14 @@ export async function POST(request: Request) {
     const situacaoLabel = situacoesMap[situacao] || situacao || "Não informado";
     const cargoLabel = cargosMap[cargo] || cargo || "Não informado";
     const funcionariosLabel = funcionariosMap[funcionarios] || funcionarios || "Não informado";
+
+    const resend = getResend();
+
+    // Se não há API key, retorna sucesso mas loga o lead
+    if (!resend) {
+      console.log("Lead recebido (Resend não configurado):", { name, email, phone, cargo, company, funcionarios, situacao, message });
+      return NextResponse.json({ success: true, message: "Lead registrado (email não configurado)" });
+    }
 
     // Email para você (notificação de novo lead)
     await resend.emails.send({

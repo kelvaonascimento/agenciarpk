@@ -128,13 +128,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Rua+dos+Coqueiros+44+Centro+Ribeirao+Pires+SP"
+                  href="https://www.google.com/maps/search/?api=1&query=R.+Ema+Mortari+1+Centro+Alto+Ribeirao+Pires+SP+09424-510"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 text-sm hover:text-primary transition-colors"
                 >
-                  Rua dos Coqueiros, 44 - Centro<br />
-                  Ribeirão Pires - SP
+                  R. Ema Mortari, 1 - Centro Alto<br />
+                  Ribeirão Pires - SP, 09424-510
                 </a>
               </li>
             </ul>

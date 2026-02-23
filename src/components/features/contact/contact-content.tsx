@@ -49,8 +49,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Localização",
-    value: "Rua dos Coqueiros, 44 - Centro, Ribeirão Pires - SP",
-    href: "https://www.google.com/maps/search/?api=1&query=Rua+dos+Coqueiros+44+Centro+Ribeirao+Pires+SP",
+    value: "R. Ema Mortari, 1 - Centro Alto, Ribeirão Pires - SP, 09424-510",
+    href: "https://www.google.com/maps/search/?api=1&query=R.+Ema+Mortari+1+Centro+Alto+Ribeirao+Pires+SP+09424-510",
   },
 ];
 
@@ -607,12 +607,12 @@ export function ContactContent() {
               Nossa Localização
             </h2>
             <p className="text-muted-foreground">
-              Rua dos Coqueiros, 44 - Centro, Ribeirão Pires - SP
+              R. Ema Mortari, 1 - Centro Alto, Ribeirão Pires - SP, 09424-510
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
             <iframe
-              src="https://maps.google.com/maps?q=Rua+dos+Coqueiros+44+Centro+Ribeirao+Pires+SP+Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=R.+Ema+Mortari+1+Centro+Alto+Ribeirao+Pires+SP+09424-510+Brasil&t=&z=16&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}

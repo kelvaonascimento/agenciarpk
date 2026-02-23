@@ -15,7 +15,7 @@ const testimonials = [
   {
     id: "1",
     quote:
-      "Antes de conhecer a RPK, nosso lançamento estava indo para o mercado sem diferenciação. O diagnóstico estratégico mudou completamente nossa direção. Vendemos 60% no pré-lançamento.",
+      "Antes de conhecer a RPK, nosso lançamento estava indo para o mercado sem diferenciação. O diagnóstico estratégico mudou completamente nossa direção. Vendemos 60% no lançamento.",
     author: "Ricardo Mendes",
     role: "Diretor",
     company: "Construtora em transição para médio porte",
@@ -154,7 +154,7 @@ export function Testimonials() {
               variant="outline"
               size="icon"
               onClick={prev}
-              className="rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white"
+              className="rounded-full bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white"
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>
@@ -164,7 +164,7 @@ export function Testimonials() {
               variant="outline"
               size="icon"
               onClick={() => setIsPaused(!isPaused)}
-              className="rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white"
+              className="rounded-full bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white"
             >
               {isPaused ? (
                 <Play className="w-4 h-4" />
@@ -192,7 +192,7 @@ export function Testimonials() {
               variant="outline"
               size="icon"
               onClick={next}
-              className="rounded-full border-white/20 text-white hover:bg-white/10 hover:text-white"
+              className="rounded-full bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white"
             >
               <ChevronRight className="w-5 h-5" />
             </Button>

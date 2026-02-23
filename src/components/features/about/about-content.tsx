@@ -51,7 +51,7 @@ const differentials = [
   "Tradução estratégica de empreendimentos em identidades de valor",
   "Experiência em grandes construtoras aplicada em projetos de transição",
   "Método próprio com apoio de IA para análise e posicionamento",
-  "Foco exclusivo no pré-lançamento — onde o sucesso é definido",
+  "Foco exclusivo no lançamento — onde o sucesso é definido",
   "Entendimento profundo do comprador moderno",
   "Acompanhamento do diagnóstico à sustentação comercial",
 ];
@@ -68,7 +68,7 @@ export function AboutContent() {
             </Badge>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Estúdio estratégico para{" "}
-              <span className="text-primary">pré-lançamentos imobiliários</span>
+              <span className="text-primary">lançamentos imobiliários</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-4">
               {positioning.about}
@@ -186,7 +186,7 @@ export function AboutContent() {
                 </h3>
                 <p className="text-muted-foreground">
                   Garantir que bons empreendimentos entrem no mercado do jeito certo.
-                  Construímos a percepção de valor que acelera vendas no pré-lançamento,
+                  Construímos a percepção de valor que acelera vendas no lançamento,
                   para construtoras que não podem errar em seu lançamento mais importante.
                 </p>
               </CardContent>
@@ -203,7 +203,7 @@ export function AboutContent() {
                   Nossa Visão
                 </h3>
                 <p className="text-muted-foreground">
-                  Ser a referência em estruturação estratégica de pré-lançamentos
+                  Ser a referência em estruturação estratégica de lançamentos
                   imobiliários no Brasil. Reconhecidos por construtoras em transição
                   como parceiros essenciais para entrar no mercado com segurança.
                 </p>

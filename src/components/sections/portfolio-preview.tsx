@@ -33,7 +33,7 @@ export function PortfolioPreview() {
               do mercado imobiliário.
             </p>
           </div>
-          <Button asChild variant="outline" className="self-start md:self-auto border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full">
+          <Button asChild variant="outline" className="self-start md:self-auto bg-transparent border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full">
             <Link href="/portfolio" className="gap-2">
               Ver Todos
               <ArrowRight className="w-4 h-4" />

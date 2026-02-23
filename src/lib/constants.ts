@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Agência RPK",
-  description: "Percepção de valor para pré-lançamentos imobiliários",
-  tagline: "A velocidade de venda é definida no pré-lançamento, não no stand",
+  description: "Percepção de valor para lançamentos imobiliários",
+  tagline: "A velocidade de venda é definida no lançamento, não no stand",
   url: "https://www.agenciarpk.com",
   ogImage: "/og-image.jpg",
   cnpj: "44.229.737/0001-56",
@@ -41,17 +41,17 @@ export const bigStats = [
 
 // Textos estratégicos do posicionamento
 export const positioning = {
-  bigIdea: "A velocidade de venda é definida no pré-lançamento, não no stand",
-  headline: "Percepção de valor para pré-lançamentos imobiliários",
+  bigIdea: "A velocidade de venda é definida no lançamento, não no stand",
+  headline: "Percepção de valor para lançamentos imobiliários",
   subheadline: "Estrutura estratégica para vender melhor antes do stand existir. Ajudamos construtoras em transição a lançar empreendimentos verticais com velocidade de venda e segurança estratégica.",
-  valueProposition: "Quem define a velocidade e o sucesso de um lançamento imobiliário hoje é a percepção de valor construída no pré-lançamento — não o stand de vendas.",
+  valueProposition: "Quem define a velocidade e o sucesso de um lançamento imobiliário hoje é a percepção de valor construída antes do stand de vendas — não durante.",
   about: "Com mais de R$ 790 milhões em VGV lançados e experiência em grandes construtoras, desenvolvemos um método próprio com apoio de IA para análise estratégica. Nosso papel é garantir que um empreendimento entre no mercado do jeito certo — desde o primeiro contato.",
   cta: "Se você está entrando no seu primeiro grande lançamento, vale conversar antes de decidir.",
   differentials: [
     "Tradução estratégica de empreendimentos em identidades que constroem percepção de valor",
     "Experiência em grandes construtoras aplicada em projetos de transição",
     "Método próprio com apoio de IA para análise e posicionamento",
-    "Foco exclusivo no pré-lançamento — onde o sucesso é definido",
+    "Foco exclusivo no lançamento — onde o sucesso é definido",
   ],
   phrases: {
     hook: "Evitamos que um bom empreendimento entre no mercado do jeito errado",
@@ -66,7 +66,7 @@ export const icp = {
   description: "Empresários do setor de construção civil em transição de pequeno para médio porte, realizando seu primeiro grande lançamento residencial vertical.",
   pain: "Estou colocando o maior projeto da empresa na rua — e se ele parecer menor do que realmente é, perco velocidade de venda, margem e confiança do mercado.",
   needs: [
-    "Construir percepção de valor no pré-lançamento",
+    "Construir percepção de valor no lançamento",
     "Vender com velocidade, margem e autoridade",
     "Competir em regiões mais disputadas",
     "Traduzir um bom empreendimento em identidade que reflete seu valor real",
@@ -88,7 +88,7 @@ export const services = [
       "Análise de mercado e concorrência",
       "Leitura do público comprador",
       "Avaliação de percepção atual",
-      "Identificação de riscos no pré-lançamento",
+      "Identificação de riscos no lançamento",
       "Direções estratégicas fundamentadas",
     ],
     icon: "Search",
@@ -105,7 +105,7 @@ export const services = [
       "Posicionamento e narrativa do empreendimento",
       "Nome e conceito estratégico",
       "Tradução visual do posicionamento",
-      "Materiais-chave de pré-lançamento",
+      "Materiais-chave de lançamento",
       "Manual de identidade estratégica",
       "Aplicações para pré-venda",
     ],
@@ -117,7 +117,7 @@ export const services = [
     layer: 3,
     shortDescription: "Apoio estratégico para a equipe de vendas",
     description:
-      "A percepção construída no pré-lançamento precisa ser sustentada durante toda a fase comercial. Desenvolvemos materiais e apoio visual que mantêm a coerência estratégica do stand ao fechamento.",
+      "A percepção construída no lançamento precisa ser sustentada durante toda a fase comercial. Desenvolvemos materiais e apoio visual que mantêm a coerência estratégica do stand ao fechamento.",
     deliveryTime: "Contínuo",
     features: [
       "Materiais para corretores",
@@ -135,7 +135,7 @@ export const services = [
 export const serviceDetails = {
   diagnostico: {
     title: "Diagnóstico Estratégico",
-    subtitle: "O pré-lançamento começa com leitura, não com design",
+    subtitle: "O lançamento começa com leitura, não com design",
     description: "Antes de decidir qualquer coisa, é preciso entender onde o risco está. O diagnóstico é uma análise profunda que identifica o que pode comprometer a percepção de valor do seu empreendimento.",
     forWho: "Para construtoras entrando em seu primeiro grande lançamento vertical, que precisam de segurança estratégica antes de investir em identidade e materiais.",
     includes: [
@@ -189,7 +189,7 @@ export const serviceDetails = {
       },
       {
         title: "Materiais-Chave",
-        description: "Peças essenciais para o pré-lançamento com coerência estratégica.",
+        description: "Peças essenciais para o lançamento com coerência estratégica.",
       },
       {
         title: "Manual de Identidade",
@@ -284,7 +284,7 @@ export const processSteps = [
     duration: "1-2 semanas",
     items: [
       { title: "Traduzimos o posicionamento em identidade visual.", label: "Identidade:" },
-      { title: "Desenvolvemos materiais-chave do pré-lançamento.", label: "Materiais:" },
+      { title: "Desenvolvemos materiais-chave do lançamento.", label: "Materiais:" },
       { title: "Refinamos com base no seu feedback.", label: "Ajustes:" },
     ],
   },
@@ -295,7 +295,7 @@ export const processSteps = [
     duration: "2-3 dias",
     items: [
       { title: "Identidade completa e manual de aplicação.", label: "Identidade estratégica:" },
-      { title: "Todos os materiais de pré-lançamento finalizados.", label: "Materiais-chave:" },
+      { title: "Todos os materiais de lançamento finalizados.", label: "Materiais-chave:" },
       { title: "Suporte para dúvidas e ajustes iniciais.", label: "Acompanhamento:" },
     ],
   },
@@ -305,7 +305,7 @@ export const faq = [
   {
     question: "Por que investir em percepção de valor antes do stand existir?",
     answer:
-      "A velocidade de venda de um lançamento é definida no pré-lançamento, não no stand. O comprador moderno pesquisa e decide antes de visitar. Se a percepção construída não refletir o valor real do empreendimento, você perde velocidade de venda, margem e confiança do mercado.",
+      "A velocidade de venda de um lançamento é definida antes do stand, não durante. O comprador moderno pesquisa e decide antes de visitar. Se a percepção construída não refletir o valor real do empreendimento, você perde velocidade de venda, margem e confiança do mercado.",
   },
   {
     question: "Qual a diferença entre design e decisão estratégica?",
@@ -325,12 +325,12 @@ export const faq = [
   {
     question: "Qual o prazo médio para um projeto completo?",
     answer:
-      "Um projeto completo (diagnóstico + identidade estratégica + materiais de pré-lançamento) leva em média 3-4 semanas. O prazo exato depende da complexidade do empreendimento e do escopo definido após o diagnóstico.",
+      "Um projeto completo (diagnóstico + identidade estratégica + materiais de lançamento) leva em média 3-4 semanas. O prazo exato depende da complexidade do empreendimento e do escopo definido após o diagnóstico.",
   },
   {
     question: "Como funciona o investimento?",
     answer:
-      "O investimento é definido após entendermos o projeto. Trabalhamos com diferentes modelos: projeto fechado, pacote de pré-lançamento ou acompanhamento contínuo. O primeiro passo é sempre uma conversa para entender sua necessidade.",
+      "O investimento é definido após entendermos o projeto. Trabalhamos com diferentes modelos: projeto fechado, pacote de lançamento ou acompanhamento contínuo. O primeiro passo é sempre uma conversa para entender sua necessidade.",
   },
 ];
 
@@ -354,7 +354,7 @@ export const blogCategories = [
   {
     id: "noticias",
     name: "Notícias",
-    description: "Fatos do mercado com análise de impacto no pré-lançamento",
+    description: "Fatos do mercado com análise de impacto no lançamento",
   },
   {
     id: "metodo",

@@ -18,13 +18,13 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.agenciarpk.com"),
   title: {
-    default: "Agência RPK | Percepção de Valor para Pré-lançamentos Imobiliários",
+    default: "Agência RPK | Percepção de Valor para Lançamentos Imobiliários",
     template: "%s | Agência RPK",
   },
   description:
-    "Estúdio estratégico especializado em construir percepção de valor para pré-lançamentos imobiliários. Ajudamos construtoras em transição a lançar empreendimentos com velocidade de venda e segurança estratégica. +R$ 790M em VGV lançados.",
+    "Estúdio estratégico especializado em construir percepção de valor para lançamentos imobiliários. Ajudamos construtoras em transição a lançar empreendimentos com velocidade de venda e segurança estratégica. +R$ 790M em VGV lançados.",
   keywords: [
-    "pré-lançamento imobiliário",
+    "lançamento imobiliário",
     "percepção de valor imobiliário",
     "posicionamento de empreendimentos",
     "identidade estratégica imobiliária",
@@ -43,21 +43,21 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://www.agenciarpk.com",
     siteName: "Agência RPK",
-    title: "Agência RPK | Percepção de Valor para Pré-lançamentos Imobiliários",
+    title: "Agência RPK | Percepção de Valor para Lançamentos Imobiliários",
     description:
-      "A velocidade de venda é definida no pré-lançamento, não no stand. Estrutura estratégica para construtoras em transição lançarem empreendimentos com segurança.",
+      "A velocidade de venda é definida no lançamento, não no stand. Estrutura estratégica para construtoras em transição lançarem empreendimentos com segurança.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Agência RPK - Percepção de Valor para Pré-lançamentos Imobiliários",
+        alt: "Agência RPK - Percepção de Valor para Lançamentos Imobiliários",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agência RPK | Pré-lançamentos Imobiliários",
+    title: "Agência RPK | Lançamentos Imobiliários",
     description:
       "Estúdio estratégico para construtoras em transição. +R$ 790M em VGV lançados.",
     images: ["/og-image.jpg"],

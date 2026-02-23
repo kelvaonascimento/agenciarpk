@@ -116,7 +116,7 @@ export function DiagnosticoContent() {
               <span className="text-primary">antes de qualquer execução</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              O pré-lançamento começa com leitura estratégica, não com design.
+              O lançamento começa com leitura estratégica, não com design.
               Cada etapa do diagnóstico é pensada para reduzir riscos e criar
               fundamentos sólidos.
             </p>
@@ -344,7 +344,7 @@ export function DiagnosticoContent() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="gap-2">
+              <Button asChild size="lg" variant="outline" className="gap-2 bg-transparent border-primary text-primary hover:bg-primary/10">
                 <a
                   href={siteConfig.links.whatsapp}
                   target="_blank"

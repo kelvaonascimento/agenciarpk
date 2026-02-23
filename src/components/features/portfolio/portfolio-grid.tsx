@@ -355,7 +355,7 @@ export function PortfolioGrid() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 border-white/20 text-white hover:bg-white/10"
+                className="rounded-full px-8 bg-transparent border-white/20 text-white hover:bg-white/10"
               >
                 <Link href="/diagnostico">Diagnóstico gratuito</Link>
               </Button>

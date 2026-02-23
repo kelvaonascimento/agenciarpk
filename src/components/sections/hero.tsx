@@ -19,7 +19,7 @@ export function Hero() {
 
   // Parallax transforms
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
     <section
@@ -55,7 +55,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/10">
               <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-sm text-white/80">Estúdio Estratégico de Pré-lançamentos</span>
+              <span className="text-sm text-white/80">Estúdio Estratégico de Lançamentos</span>
             </div>
           </motion.div>
 
@@ -68,7 +68,7 @@ export function Hero() {
           >
             Percepção de valor para{" "}
             <span className="relative inline-block">
-              <span className="text-gradient">pré-lançamentos</span>
+              <span className="text-gradient">lançamentos</span>
               <motion.span
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
@@ -144,7 +144,7 @@ export function Hero() {
                 <div className="absolute bottom-0 left-0 w-40 h-40 bg-white/20 rounded-full translate-y-1/2 -translate-x-1/4" />
                 <div className="relative z-10">
                   <span className="font-heading text-5xl md:text-6xl font-bold text-white">
-                    +<AnimatedCounter value={790} duration={2.5} delay={0.8} />M
+                    +<AnimatedCounter value={790} duration={1.2} delay={0.3} />M
                   </span>
                 </div>
                 <div className="relative z-10 text-right">
@@ -164,7 +164,7 @@ export function Hero() {
                 <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[80px] border-r-[80px] border-b-[120px] border-l-transparent border-r-transparent border-b-white/10" />
                 <div className="relative z-10">
                   <span className="font-heading text-5xl md:text-6xl font-bold text-white">
-                    +<AnimatedCounter value={5} duration={2} delay={0.9} />
+                    +<AnimatedCounter value={5} duration={0.8} delay={0.4} />
                   </span>
                 </div>
                 <div className="relative z-10 text-right">
@@ -188,7 +188,7 @@ export function Hero() {
                 </div>
                 <div className="relative z-10">
                   <span className="font-heading text-5xl md:text-6xl font-bold text-gray-900">
-                    +<AnimatedCounter value={14} duration={2} delay={1} />
+                    +<AnimatedCounter value={14} duration={1} delay={0.5} />
                   </span>
                 </div>
                 <div className="relative z-10 text-right">

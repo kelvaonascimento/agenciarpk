@@ -14,7 +14,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Quinta do Lago Lake Victória",
     client: "Lake Victória",
     category: "Identidade Estratégica",
-    description: "Projeto completo de posicionamento, narrativa e identidade visual para o empreendimento Quinta do Lago. Desenvolvemos toda a estratégia de percepção de valor e materiais-chave para o pré-lançamento.",
+    description: "Projeto completo de posicionamento, narrativa e identidade visual para o empreendimento Quinta do Lago. Desenvolvemos toda a estratégia de percepção de valor e materiais-chave para o lançamento.",
     image: "/portfolio/quinta-do-lago.jpg",
     images: [
       "/portfolio/quinta-do-lago-1.jpg",

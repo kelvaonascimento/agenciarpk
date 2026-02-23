@@ -109,6 +109,9 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
           className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-primary/10 blur-3xl"
         />
 
+        {/* Bottom gradient for text contrast */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent z-[1]" />
+
         {/* Content */}
         <motion.div
           style={{ opacity: heroOpacity }}
@@ -169,22 +172,22 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
               className="flex flex-wrap items-center gap-8 text-white/50"
             >
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                  <Layers className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                  <Layers className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-white/30">Cliente</p>
-                  <p className="text-white font-medium">{project.client}</p>
+                  <p className="text-xs uppercase tracking-wider text-white/60">Cliente</p>
+                  <p className="text-white font-semibold">{project.client}</p>
                 </div>
               </div>
               {project.date && (
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <Calendar className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <Calendar className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-white/30">Data</p>
-                    <p className="text-white font-medium">{project.date}</p>
+                    <p className="text-xs uppercase tracking-wider text-white/60">Data</p>
+                    <p className="text-white font-semibold">{project.date}</p>
                   </div>
                 </div>
               )}
@@ -222,7 +225,7 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
           >
             <button
               onClick={() => openLightbox(0)}
-              className="w-full aspect-[16/9] rounded-3xl bg-gradient-to-br from-primary/30 via-[#1a1a1a] to-[#0a0a0a] overflow-hidden cursor-pointer group relative shadow-2xl shadow-black/50"
+              className="w-full aspect-[16/9] rounded-3xl bg-gradient-to-br from-primary/20 via-muted to-background overflow-hidden cursor-pointer group relative shadow-2xl shadow-black/10 border border-border"
             >
               {/* Placeholder Visual */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -294,29 +297,29 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                 transition={{ delay: 0.2 }}
                 className="lg:col-span-5"
               >
-                <div className="sticky top-32 bg-[#0a0a0a] rounded-3xl p-8 border border-white/10">
-                  <h3 className="font-heading text-xl font-bold text-white mb-8">
+                <div className="sticky top-32 bg-muted rounded-3xl p-8 border border-border">
+                  <h3 className="font-heading text-xl font-bold mb-8">
                     Detalhes do Projeto
                   </h3>
 
                   <div className="space-y-6">
-                    <div className="flex items-center justify-between py-4 border-b border-white/10">
-                      <span className="text-white/50 text-sm uppercase tracking-wider">Cliente</span>
-                      <span className="text-white font-medium">{project.client}</span>
+                    <div className="flex items-center justify-between py-4 border-b border-border">
+                      <span className="text-muted-foreground text-sm uppercase tracking-wider">Cliente</span>
+                      <span className="font-medium">{project.client}</span>
                     </div>
-                    <div className="flex items-center justify-between py-4 border-b border-white/10">
-                      <span className="text-white/50 text-sm uppercase tracking-wider">Serviço</span>
-                      <span className="text-white font-medium">{project.category}</span>
+                    <div className="flex items-center justify-between py-4 border-b border-border">
+                      <span className="text-muted-foreground text-sm uppercase tracking-wider">Serviço</span>
+                      <span className="font-medium">{project.category}</span>
                     </div>
                     {project.date && (
-                      <div className="flex items-center justify-between py-4 border-b border-white/10">
-                        <span className="text-white/50 text-sm uppercase tracking-wider">Entrega</span>
-                        <span className="text-white font-medium">{project.date}</span>
+                      <div className="flex items-center justify-between py-4 border-b border-border">
+                        <span className="text-muted-foreground text-sm uppercase tracking-wider">Entrega</span>
+                        <span className="font-medium">{project.date}</span>
                       </div>
                     )}
                     {project.link && (
-                      <div className="flex items-center justify-between py-4 border-b border-white/10">
-                        <span className="text-white/50 text-sm uppercase tracking-wider">Link</span>
+                      <div className="flex items-center justify-between py-4 border-b border-border">
+                        <span className="text-muted-foreground text-sm uppercase tracking-wider">Link</span>
                         <a
                           href={project.link}
                           target="_blank"
@@ -330,8 +333,8 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                     )}
                   </div>
 
-                  <div className="mt-8 pt-8 border-t border-white/10">
-                    <p className="text-white/50 text-sm mb-4">
+                  <div className="mt-8 pt-8 border-t border-border">
+                    <p className="text-muted-foreground text-sm mb-4">
                       Quer um resultado como este?
                     </p>
                     <Button asChild size="lg" className="w-full rounded-full gap-2">
@@ -350,7 +353,7 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
 
       {/* Image Gallery - Modern Grid */}
       {allImages.length > 1 && (
-        <section className="py-24 bg-[#0a0a0a]">
+        <section className="py-24 bg-muted">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -363,11 +366,11 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                   <span className="text-primary text-sm uppercase tracking-widest font-medium mb-2 block">
                     Galeria
                   </span>
-                  <h2 className="font-heading text-3xl font-bold text-white">
+                  <h2 className="font-heading text-3xl font-bold">
                     Explore os detalhes
                   </h2>
                 </div>
-                <span className="text-white/30 text-sm">
+                <span className="text-muted-foreground text-sm">
                   {allImages.length} imagens
                 </span>
               </div>
@@ -387,9 +390,9 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                     `}
                   >
                     {/* Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-[#1a1a1a] to-[#0a0a0a]">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-muted">
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <span className={`font-heading font-bold text-white/10 ${index === 0 ? "text-8xl" : "text-4xl"}`}>
+                        <span className={`font-heading font-bold text-foreground/5 ${index === 0 ? "text-8xl" : "text-4xl"}`}>
                           {String(index + 1).padStart(2, "0")}
                         </span>
                       </div>
@@ -402,8 +405,8 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                       </div>
                     </div>
 
-                    {/* Border Glow */}
-                    <div className="absolute inset-0 rounded-2xl border border-white/10 group-hover:border-primary/50 transition-colors" />
+                    {/* Border */}
+                    <div className="absolute inset-0 rounded-2xl border border-border group-hover:border-primary/50 transition-colors" />
                   </motion.button>
                 ))}
               </div>
@@ -454,7 +457,7 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                     >
                       <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4">
                         {/* Background */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-muted to-[#0a0a0a]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-muted to-background">
                           <div className="absolute inset-0 flex items-center justify-center">
                             <span className="text-5xl font-heading font-bold text-white/10">
                               {relatedProject.title.substring(0, 2).toUpperCase()}
@@ -489,12 +492,8 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
       )}
 
       {/* CTA Section */}
-      <section className="py-32 bg-[#0a0a0a] relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,119,52,0.2),transparent_70%)]" />
-          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent" />
-        </div>
+      <section className="relative py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-[#e55a1a]" />
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -503,18 +502,18 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <span className="text-primary text-sm uppercase tracking-widest font-medium mb-6 block">
+            <span className="text-white/80 text-sm uppercase tracking-widest font-medium mb-6 block">
               Próximo Passo
             </span>
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               Seu projeto pode ser o próximo
             </h2>
-            <p className="text-xl text-white/50 mb-12 max-w-2xl mx-auto">
+            <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
               Vamos construir a percepção de valor que seu empreendimento merece.
               O primeiro passo é uma conversa.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button asChild size="lg" className="rounded-full px-10 gap-2 text-lg">
+              <Button asChild size="lg" className="rounded-full px-10 gap-2 text-lg bg-white text-primary hover:bg-white/90">
                 <Link href="/contato">
                   Vamos Conversar
                   <ArrowRight className="w-5 h-5" />
@@ -524,7 +523,7 @@ export function ProjectDetail({ project, relatedProjects }: ProjectDetailProps) 
                 asChild
                 variant="outline"
                 size="lg"
-                className="rounded-full px-10 border-white/20 text-white hover:bg-white/10"
+                className="rounded-full px-10 bg-transparent border-white text-white hover:bg-white/10"
               >
                 <Link href="/diagnostico">Diagnóstico Gratuito</Link>
               </Button>

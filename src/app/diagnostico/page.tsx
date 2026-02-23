@@ -8,11 +8,11 @@ import { DiagnosticoContent } from "@/components/features/diagnostico/diagnostic
 export const metadata: Metadata = {
   title: "Diagnóstico Estratégico",
   description:
-    "Antes de decidir qualquer coisa, é preciso entender onde o risco está. O diagnóstico estratégico é uma leitura profunda do empreendimento, mercado e público para construir percepção de valor no pré-lançamento.",
+    "Antes de decidir qualquer coisa, é preciso entender onde o risco está. O diagnóstico estratégico é uma leitura profunda do empreendimento, mercado e público para construir percepção de valor no lançamento.",
   openGraph: {
     title: "Diagnóstico Estratégico | Agência RPK",
     description:
-      "Leitura estratégica completa antes de qualquer execução. Identifique riscos e oportunidades no seu pré-lançamento imobiliário.",
+      "Leitura estratégica completa antes de qualquer execução. Identifique riscos e oportunidades no seu lançamento imobiliário.",
   },
 };
 

@@ -44,7 +44,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo className="mb-6" />
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Estúdio estratégico de percepção de valor para pré-lançamentos
+              Estúdio estratégico de percepção de valor para lançamentos
               imobiliários. Ajudamos construtoras em transição a lançar com
               velocidade de venda e segurança estratégica.
             </p>

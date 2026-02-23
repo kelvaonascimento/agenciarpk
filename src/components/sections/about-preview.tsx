@@ -33,7 +33,7 @@ const differentials = [
   "Tradução estratégica de empreendimentos em identidades de valor",
   "Experiência em grandes construtoras aplicada em projetos de transição",
   "Método próprio com apoio de IA para análise e posicionamento",
-  "Foco exclusivo no pré-lançamento — onde o sucesso é definido",
+  "Foco exclusivo no lançamento — onde o sucesso é definido",
   "Entendimento profundo do comprador moderno",
   "Acompanhamento do diagnóstico à sustentação comercial",
 ];

@@ -9,7 +9,7 @@ import { getAllPosts } from "@/lib/mdx";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Artigos sobre percepção de valor, posicionamento estratégico, comportamento do comprador e estratégias para pré-lançamentos imobiliários de sucesso.",
+    "Artigos sobre percepção de valor, posicionamento estratégico, comportamento do comprador e estratégias para lançamentos imobiliários de sucesso.",
 };
 
 export default function BlogPage() {

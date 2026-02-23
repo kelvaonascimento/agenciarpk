@@ -72,7 +72,7 @@ export function CTASection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 text-base px-8 gap-2"
+                className="bg-transparent border-white text-white hover:bg-white/10 text-base px-8 gap-2"
               >
                 <a
                   href={siteConfig.links.whatsapp}

@@ -43,7 +43,7 @@ export function AuthorSection({ author, date }: AuthorSectionProps) {
           </div>
 
           <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-            Estúdio estratégico especializado em estruturação de pré-lançamentos
+            Estúdio estratégico especializado em estruturação de lançamentos
             imobiliários. Ajudamos construtoras em transição a lançar empreendimentos
             com percepção de valor e velocidade de vendas.
           </p>
